@@ -1,5 +1,5 @@
 export default class View {
-  constructor() {}
+  constructor(params) {}
   setTitle(title) {
     document.title = `Vanilla JS SPA | ${title}`;
   }

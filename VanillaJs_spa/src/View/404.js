@@ -1,8 +1,8 @@
 import View from "./View.js";
 
 export default class Page404 extends View {
-  constructor() {
-    super();
+  constructor(params) {
+    super(params);
     this.setTitle();
   }
   getHtml() {
@@ -11,11 +11,4 @@ export default class Page404 extends View {
     
     `;
   }
-  //   const section = document.createElement("div");
-  //   section.className = "HomeSection";
-  //   section.innerHTML = `<div>Home</div>`;
-  //   this.render = () => {
-  //     console.log(target);
-  //     target.appendChild(section);
-  //   };
 }

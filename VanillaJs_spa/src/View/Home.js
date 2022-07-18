@@ -1,8 +1,8 @@
 import View from "./View.js";
 
 export default class Home extends View {
-  constructor() {
-    super();
+  constructor(params) {
+    super(params);
     this.setTitle("Home");
   }
   getHtml() {
@@ -12,11 +12,4 @@ export default class Home extends View {
     <p>왼쪽 네비게이션 클릭시 페이지 이동합니다</p>
     `;
   }
-  //   const section = document.createElement("div");
-  //   section.className = "HomeSection";
-  //   section.innerHTML = `<div>Home</div>`;
-  //   this.render = () => {
-  //     console.log(target);
-  //     target.appendChild(section);
-  //   };
 }

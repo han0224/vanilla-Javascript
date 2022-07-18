@@ -1,15 +1,9 @@
 import View from "./View.js";
 
 export default class Setting extends View {
-  constructor() {
-    super();
+  constructor(params) {
+    super(params);
     this.setTitle("Setting");
-    // const section = document.createElement("div");
-    // section.className = "SettingSection";
-    // section.innerHTML = `<div>Setting</div>`;
-    // this.render = () => {
-    //   target.appendChild(section);
-    // };
   }
   getHtml() {
     return `
