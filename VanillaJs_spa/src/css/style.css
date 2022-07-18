@@ -1,0 +1,26 @@
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav {
+  background-color: #8888aa;
+  border-right: solid 3px #61617d;
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  padding: 0 30px;
+  height: 100vh;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+  margin: 0;
+}
+
+.nav_item {
+  font-size: 24px;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
