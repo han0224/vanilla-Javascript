@@ -3,6 +3,7 @@ const path = require("path");
 const app = express();
 
 app.use("/src", express.static(path.resolve(__dirname, "src")));
+app.use("/public", express.static(path.resolve(__dirname, "public")));
 console.log(path.resolve(__dirname, "src"));
 
 app.get("/*", (req, res) => {

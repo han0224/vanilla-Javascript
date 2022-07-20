@@ -1,0 +1,13 @@
+:root {
+  --main-background-color: #f0ece3;
+  --color1: #dfd3c3;
+  --color2: #c7b198;
+  --color3: #a68dad;
+
+  --color1-dark: #998973;
+  --color2-dark: #a88e70;
+  --color3-dark: #73567b;
+
+  --scroll-background: #a68dad27;
+  --scroll-color: #a68dad;
+}

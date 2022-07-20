@@ -37,11 +37,17 @@ const router = async () => {
   let match = pageMatches.find((page) => page.isMatch);
 
   if (match === undefined) {
-    document.querySelector(".App").innerHTML = new Page404(null).getHtml();
+    new Page404(null).render(document.querySelector(".App"));
     return;
   }
   const view = new match.route.view(getParams(match));
-  document.querySelector(".App").innerHTML = view.getHtml();
+  // TODO 다른 방식 고민
+  // 컴포넌트화 시키려면 어떻게?
+  // -> getHtml 에서 미리 컴포넌트들을 조합
+  // -> 그럼 이후 변경 사항이 있으면 변경 안됨
+  // -> appendChild 로 root에서 붙이는 방식?
+  view.render(document.querySelector(".App"));
+  // document.querySelector(".App").innerHTML = view.getHtml();
 
   document.addEventListener("DOMContentLoaded", () => {
     document.body.addEventListener("click", (e) => {

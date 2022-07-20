@@ -5,10 +5,11 @@ export default class Page404 extends View {
     super(params);
     this.setTitle();
   }
-  getHtml() {
-    return `
-    <h1>404</h1>
-    
-    `;
+
+  render(target) {
+    super.render(target);
+    const ErrorSection = document.createElement("h1");
+    ErrorSection.innerHTML = `Error`;
+    target.appendChild(ErrorSection);
   }
 }

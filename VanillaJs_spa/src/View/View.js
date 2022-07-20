@@ -3,7 +3,8 @@ export default class View {
   setTitle(title) {
     document.title = `Vanilla JS SPA | ${title}`;
   }
-  getHtml() {
-    return ``;
+
+  render(target) {
+    target.innerHTML = "";
   }
 }

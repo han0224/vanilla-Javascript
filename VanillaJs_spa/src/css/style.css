@@ -1,15 +1,39 @@
+@import url(./constant.css);
+
 body {
   padding: 0;
   margin: 0;
   display: flex;
 }
 
+main::-webkit-scrollbar-thumb {
+  height: 80%;
+  background-color: var(--color3);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
 .nav {
-  background-color: #8888aa;
-  border-right: solid 3px #61617d;
+  box-sizing: border-box;
+  background-color: var(--color3);
+  border-right: 3px solid var(--color3-dark);
   display: flex;
   flex-direction: column;
-  width: 100px;
+  width: 120px;
   padding: 0 30px;
   height: 100vh;
   justify-content: center;
@@ -20,7 +44,28 @@ body {
 
 .nav_item {
   font-size: 24px;
-  text-decoration: none;
-  color: black;
   font-weight: 600;
+}
+
+.App {
+  width: calc(100vw - 120px);
+  height: 100vh;
+  background-color: var(--main-background-color);
+}
+
+::-webkit-scrollbar {
+  width: 0.7em; /* 스크롤바의 너비 */
+  height: 0.7em;
+}
+::-webkit-scrollbar-thumb {
+  height: 30%; /* 스크롤바의 길이 */
+  background: var(--scroll-color); /* 스크롤바의 색상 */
+
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  margin: 10px;
+  border-radius: 10px;
+
+  background: var(--scroll-background); /*스크롤바 뒷 배경 색상*/
 }
