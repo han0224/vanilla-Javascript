@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+main {
+  height: 100vh;
+  display: flex;
+  background-color: var(--main-bg-color);
+}
+.clock {
+  position: relative;
+  margin: auto;
+  width: 350px;
+  height: 350px;
+  background-color: var(--clock-bg-color);
+  border: 5px solid var(--clock-border-color);
+  border-radius: 50%;
+}
+.center,
+.hand > [class$="hand"] {
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+}
+.hand > [class$="hand"] {
+  transform-origin: left bottom;
+  border-radius: 20px;
+}
+.hour > span {
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, 0);
+  transform-origin: left bottom;
+  color: var(--clock-color);
+  width: fit-content;
+  height: 175px;
+  margin: 1px;
+  font-size: 32px;
+}
+.hour > span:nth-child(2) {
+  transform: rotate(30deg);
+}
+.hour > span:nth-child(3) {
+  transform: rotate(60deg);
+}
+.hour > span:nth-child(4) {
+  transform: rotate(90deg);
+}
+.hour > span:nth-child(5) {
+  transform: rotate(120deg);
+}
+.hour > span:nth-child(6) {
+  transform: rotate(150deg);
+}
+.hour > span:nth-child(7) {
+  transform: rotate(180deg);
+}
+.hour > span:nth-child(8) {
+  transform: rotate(210deg);
+}
+.hour > span:nth-child(9) {
+  transform: rotate(240deg);
+}
+.hour > span:nth-child(10) {
+  transform: rotate(270deg);
+}
+.hour > span:nth-child(11) {
+  transform: rotate(300deg);
+}
+.hour > span:nth-child(12) {
+  transform: rotate(330deg);
+}
+.center {
+  width: 50px;
+  height: 50px;
+  background-color: var(--clock-center-color);
+  z-index: 3;
+  transform: translate(-50%, 50%);
+  border-radius: 50%;
+}
+.hour-hand {
+  background-color: var(--hour-hand-color);
+  width: 5px;
+  height: 100px;
+  z-index: 2;
+}
+.minute-hand {
+  background-color: var(--minute-hand-color);
+  width: 5px;
+  height: 150px;
+}
+.second-hand {
+  background-color: var(--second-hand-color);
+  width: 2px;
+  height: 160px;
+}

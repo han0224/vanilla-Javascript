@@ -1,0 +1,10 @@
+:root {
+  --main-bg-color: #eeeeee;
+  --clock-bg-color: #dbe2ef;
+  --clock-border-color: #3f72af;
+  --clock-center-color: #f5f5f5;
+  --hour-hand-color: #fc5185;
+  --minute-hand-color: #3fc1c9;
+  --second-hand-color: #364f6b;
+  --clock-color: black;
+}
